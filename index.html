@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script> 
+      $(function(){ 
+        $("#footer").load("footer.html"); 
+      });
+      </script> 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="myHeader">
+      <div class="contain">
+        <div
+          class="d-flex align-items-center justify-content-between flex-grow-1 my-2"
+          style="flex: 1; width: 50px"
+        >
+          <a
+            href=""
+            class="d-flex align-items-center flex-wrap flex-sm-nowrap w-100"
+          >
+            <div class="px-2 bb-site-title w-100">
+              <p>Chambray Online Tutoring</p>
+            </div>
+          </a>
+          <div class="bb-desktop-nav">
+            <ul class="d-flex mx-n2 flex-row">
+              <li class="mx-3">
+                <a href="" class="active"><span>Home</span></a>
+              </li>
+              <li class="mx-3">
+                <a href="../f/about.html"><span>About Us</span></a>
+              </li>
+              <li class="bb-popover mx-3">
+                <a href=""><span>Our Programs</span></a>
+              </li>
+              <li class="bb-popover mx-3">
+                <a href=""><span>Contact Us</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mx-2 my-2">
+          <div class="bb-header-btn">
+            <!-- <div class="language-switch d-flex align-items-center">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-globe2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"
+                  />
+                </svg>
+              </div>
+              <select id="language_select" class="form-select">
+                <option value="en" selected>English</option>
+                <option value="vn">中文 (繁體)</option>
+              </select>
+            </div> -->
+            <div id="google_translate_element"></div>
+          </div>
+          <div>
+            <div class="language-switch-toggle" onclick="toggleNavMenu()">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    data-name="Path 34314"
+                    d="M12 1.937a10 10 0 1010 10 10 10 0 00-10-10zm-.034 18c-.151 0-.3-.014-.447-.023a14.307 14.307 0 01-1.869-3.977h4.2a14.32 14.32 0 01-1.884 4zm-2.752-6a14.255 14.255 0 010-4h5.071a14.246 14.246 0 010 4zm-5.214-2a7.952 7.952 0 01.264-2h2.938a16.231 16.231 0 000 4H4.264a7.951 7.951 0 01-.264-2zm7.966-8a14.32 14.32 0 011.884 4h-4.2a14.308 14.308 0 011.869-3.975c.148-.009.296-.025.447-.025zm4.333 6h3.438a7.724 7.724 0 010 4H16.3a16.219 16.219 0 000-4zm2.619-2h-2.992a16.244 16.244 0 00-1.375-3.575 8.031 8.031 0 014.366 3.575zm-10.1-3.335a16.225 16.225 0 00-1.242 3.335H5.084a8.046 8.046 0 013.733-3.335zM5.082 15.937h2.492a16.224 16.224 0 001.242 3.336 8.046 8.046 0 01-3.734-3.336zm9.469 3.576a16.245 16.245 0 001.375-3.576h2.992a8.031 8.031 0 01-4.367 3.576z"
+                  ></path>
+                </svg>
+                <span>EN</span>
+              </div>
+            </div>
+          </div>
+          <div class="bb-mobile-nav" onclick="toggleNavMenu()">
+            <button
+              type="button"
+              class="nav-toggle bb-box"
+              aria-label="Mobile Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="nav-menu">
+            <div class="nav-overlay"></div>
+            <div class="nav-panel bb-box d-flex flex-column">
+              <div
+                class="d-flex flex-wrap flex-row-reverse justify-content-between p-2 align-items-center bb-border-bottom"
+              >
+                <div class="d-flex align-items-center">
+                  <div class="nav-close p-3" onclick="toggleNavMenu()">
+                    <svg
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16px"
+                    >
+                      <path
+                        d="m63 0l-63 63 193 193-193 193 63 63 193-193 193 193 63-63-193-193 193-193-63-63-193 193z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-fill position-relative">
+                <nav>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="active"
+                        data-anchor="top"
+                        aria-current="page"
+                      >
+                        <div
+                          class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
+                        >
+                          <span class="link-label">Home</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/chambrayonlinetutoring/about-us">
+                        <div
+                          class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
+                        >
+                          <span class="link-label">About Us</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/chambrayonlinetutoring/our-programs">
+                        <div
+                          class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
+                        >
+                          <span class="link-label">Our Programs</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/chambrayonlinetutoring/faq">
+                        <div
+                          class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
+                        >
+                          <span class="link-label">FAQ</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/chambrayonlinetutoring/contact-us">
+                        <div
+                          class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
+                        >
+                          <span class="link-label">Contact Us</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="p-4"></div>
+                <div class="p-4">
+                  <div class="language-switch d-flex align-items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-globe2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <div id="main-introduce" class="position-relative">
+          <div class="image-main-introduce"></div>
+
+          <div class="main-introduce-content container position-relative">
+            <div class="row justify-content-start m-auto">
+              <div class="col-sm-9 col-md-8 p-0 m-0">
+                <div class="text-box text-center">
+                  <div>
+                    <h2 class="bb-section-title">Chambray Online Tutoring</h2>
+                    <h6 class="bb-section-subtitle">
+                      Learn Anytime, Access Anywhere, Programs for All.
+                    </h6>
+                    <div>
+                      <p>
+                        We proudly accept students from all walks of life,
+                        regardless of age or background, and we offer student
+                        scholarships and flexible, interest-free payment plans.
+                      </p>
+                    </div>
+                    <div
+                      class="btn-container"
+                      style="margin-top: 30px; --button-color: "
+                    >
+                      <a href="#main-welcome" data-anchor="123">
+                        <button type="button" class="btn btn-light">
+                          Get Started
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="main-welcome">
+          <div class="container main-welcome-content bb-section-padding">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="pb-4 pt-0 pt-md-4 h-100 d-flex align-items-center">
+                  <div class="w-100">
+                    <h2 class="bb-section-title">Welcome to Chambray</h2>
+                    <h6 class="bb-section-subtitle">
+                      Online Learning That Works Around Your Schedule
+                    </h6>
+                    <div>
+                      <p>
+                        Chambray Online Tutoring is certified with a variety of
+                        practical and technical programs in fine arts, science,
+                        law, engineering, computing science, and business. At
+                        Chambray, you have access to quality education anytime,
+                        anywhere. Our Academic Advisors will help you find a
+                        program that fits your needs. Continue your education
+                        and pursue your dreams.
+                      </p>
+                      <p>&nbsp;</p>
+                      <p>
+                        We proudly accept students from all walks of life,
+                        regardless of age or background, and we offer student
+                        scholarships and flexible, interest-free payment plans.
+                      </p>
+                    </div>
+                    <div
+                      class="btn-container"
+                      style="margin-top: 30px; --button-color: "
+                    >
+                      <a
+                        href="#container-featured-program"
+                        data-anchor="46328295-155D-02AB-0903-4A6FFEA76FF1"
+                      >
+                        <button type="button" class="btn btn-primary">
+                          See Our Programs
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div
+                  class="position-relative h-100"
+                  style="padding-bottom: 66%"
+                >
+                  <div class="position-absolute w-100 h-100">
+                    <div class="image-main-welcome">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="container-featured-program">
+        <div class="container">
+          <div class="header">
+            <h3 class="title">Featured Programs</h3>
+            <div class="desctription">
+              Available programs that are currently accepting new students.
+            </div>
+          </div>
+          <div class="box-items row">
+            <div class="item col-sm-6 col-md-4 text-center mb-4">
+              <img
+                src="https://www.freecodecamp.org/news/content/images/2021/08/imgTag.png"
+                alt="item1"
+                width="200px"
+                height="200px"
+              />
+              <div class="name-feature">International Business</div>
+              <div class="auth-and-time">
+                <div class="auth">DIPLOMA</div>
+                |
+                <div class="time">2 YEARS</div>
+              </div>
+              <div class="desctription-feature">
+                <p>
+                  This is a paragraph. You can write your own content here, and
+                  fill in the blanks. What's your story and where do you go from
+                  here? Tell the world about your business, and make this text
+                  yours.
+                </p>
+              </div>
+            </div>
+            <div class="item col-sm-6 col-md-4 text-center mb-4">
+              <img
+                src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="item1"
+                width="200px"
+                height="200px"
+              />
+              <div class="name-feature">International Business</div>
+              <div class="auth-and-time">
+                <div class="auth">DIPLOMA</div>
+                |
+                <div class="time">2 YEARS</div>
+              </div>
+              <div class="desctription-feature">
+                <p>
+                  This is a paragraph. You can write your own content here, and
+                  fill in the blanks. What's your story and where do you go from
+                  here? Tell the world about your business, and make this text
+                  yours.
+                </p>
+              </div>
+            </div>
+            <div class="item col-sm-6 col-md-4 text-center mb-4">
+              <img
+                src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="item1"
+                width="200px"
+                height="200px"
+              />
+              <div class="name-feature">International Business</div>
+              <div class="auth-and-time">
+                <div class="auth">DIPLOMA</div>
+                |
+                <div class="time">2 YEARS</div>
+              </div>
+              <div class="desctription-feature">
+                <p>
+                  This is a paragraph. You can write your own content here, and
+                  fill in the blanks. What's your story and where do you go from
+                  here? Tell the world about your business, and make this text
+                  yours.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-view-all text-center">
+            <a href="#">
+              <button>View All Programs &#10141;</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "vi,en", // Chỉ chọn tiếng Anh (en) và tiếng Việt (vi)
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+          },
+          "google_translate_element"
+        );
+      }
+      window.addEventListener("scroll", function () {
+        const headerElement = document.getElementById("myHeader");
+        let scrollPosition =
+          window.pageYOffset || document.documentElement.scrollTop;
+          
+        if (scrollPosition >149   ) {
+          headerElement.classList.add("header-scrolled");
+        } else {
+          headerElement.classList.remove("header-scrolled");
+        }
+      });
+      function toggleNavMenu() {
+        var mobileNav = document.querySelector(".nav-menu");
+        mobileNav.classList.toggle("show");
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
