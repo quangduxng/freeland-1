@@ -332,7 +332,7 @@ footer {
   margin: 20px 0px;
   /* width: 95%; */
 }
-#footer .form-footer .btn-submit button{
+#footer .form-footer .btn-submit input{
   width: auto;
   background-color: #3D56B2;
   border-color: #3D56B2;
@@ -454,7 +454,7 @@ footer {
     }
   }
   @media (max-width: 690px) {
-    #footer .form-footer .btn-submit button{
+    #footer .form-footer .btn-submit input{
     width: 100%;
   }
   }
