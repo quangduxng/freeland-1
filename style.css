@@ -433,6 +433,10 @@ footer p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .btn-detail{
+    background-color: #3D56B2;
+    border-color: #3D56B2;s
+  }
   @media (min-width: 576px) {
     .footer-container {
       max-width: 540px;
