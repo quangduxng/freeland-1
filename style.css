@@ -521,3 +521,6 @@ footer p {
   body {
     top: 0px !important; 
     }
+div#google_translate_element span {
+      font-size: 16px;
+  }
