@@ -424,7 +424,7 @@ footer {
   overflow: hidden;
 }
 .image-about {
-  background-image: url("https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=MCRSJEtERDlJKVVaLEdRJSNOX1dJRlAgIAo%3D&w=1280");
+  background-image: url("image/image-about-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -460,14 +460,10 @@ footer {
   background-size: contain !important;
 }
 .icon-smell {
-  background-image: url("icon/noun-smell-3608374.svg");
-  height: 95% !important;
-  width: 82% !important;
-  margin-top: 10px;
+  background-image: url("icon/noun-smell-1711214.svg");
 }
 .icon-sound {
   background-image: url("icon/noun-talk-1584055.svg");
-  height: 140% !important;
 }
 .icon-touch {
   background-image: url("icon/noun-touch-927394.svg");
@@ -554,12 +550,6 @@ footer {
   .bb-aspect-ratio {
     padding-bottom: 0px !important;
     height: 64px !important;
-  }
-  .icon-smell {
-    background-image: url(icon/noun-smell-3608374.svg);
-    height: 78% !important;
-    width: 82% !important;
-    margin-top: 20px;
   }
 }
 .goog-te-combo {
