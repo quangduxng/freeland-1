@@ -2,6 +2,10 @@
   font-family: "Archivo";
   src: url("./font/archivo.ttf") format("truetype");
 }
+:root{
+  --color-main: rgb(49, 131, 21);
+  --color-bg-main: rgb(97, 200, 97);
+}
 * {
   font-family: Archivo;
 }
@@ -41,7 +45,7 @@ h6 {
 .contain {
   height: 100%;
   padding: 24px;
-  background-color: #14279b;
+  background-color: var(--color-main);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +93,7 @@ header .bb-site-title p {
   border-bottom: 1px solid;
 }
 .form-select {
-  background-color: #14279b;
+  background-color: var(--color-main);
   color: #ffff !important;
   border: none;
   fill: #fff !important;
@@ -143,11 +147,11 @@ header .bb-site-title p {
   transition: all 200ms;
 }
 .bb-box {
-  background-color: #14279b;
+  background-color: var(--color-main);
   color: #fff;
   fill: #fff;
   --section-text-color: #fff;
-  --section-background-color: #14279b;
+  --section-background-color: var(--color-main);
 }
 .nav-menu .nav-close,
 .language-switch-toggle {
@@ -182,7 +186,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #14279b;
+  background-color: var(--color-main);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -240,7 +244,7 @@ footer {
   color: #fff;
 }
 #container-featured-program{
-  background-color: #3D56B2;
+  background-color: var(--color-bg-main);
   color: white;
   padding-bottom: 100px;
   min-height: fit-content;
@@ -334,8 +338,8 @@ footer {
 }
 #footer .form-footer .btn-submit input{
   width: auto;
-  background-color: #3D56B2;
-  border-color: #3D56B2;
+  background-color: var(--color-bg-main);
+  border-color: var(--color-bg-main);
 }
 #footer .phone-numer-text, #footer .email-text{
   color: white;
@@ -366,7 +370,7 @@ footer {
   max-width: 100%;
 }
 .main-introduce-content .text-box {
-  background-color: #5c7aea;
+  background-color: var(--color-bg-main);
   color: #fff;
   padding: 50px 40px;
 }
@@ -399,7 +403,7 @@ footer {
     display: none !important;
   }
   .goog-te-gadget-simple {
-    background-color: #14279b !important;
+    background-color: var(--color-main) !important;
     border: none !important;
   }
   .goog-te-gadget-simple span {
@@ -411,7 +415,7 @@ footer {
     max-width: 100%;
   }
   #promotion {
-    background-color: #5c7aea;
+    background-color: var(--color-bg-main);
     color: #fff;
     fill: #fff;
   }
@@ -434,8 +438,8 @@ footer {
     padding-bottom: 20px;
   }
   .btn-detail{
-    background-color: #3D56B2;
-    border-color: #3D56B2;s
+    background-color: var(--color-bg-main);
+    border-color: var(--color-bg-main);s
   }
   @media (min-width: 576px) {
     .footer-container {
