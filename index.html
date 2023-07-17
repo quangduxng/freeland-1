@@ -11,11 +11,11 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script> 
-      $(function(){ 
-        $("#footer").load("footer.html"); 
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
       });
-      </script> 
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -30,7 +30,7 @@
             class="d-flex align-items-center flex-wrap flex-sm-nowrap w-100"
           >
             <div class="px-2 bb-site-title w-100">
-              <p>OUI. ENGLISH ONLINE</p>
+              <p>OUI.VN</p>
             </div>
           </a>
           <div class="bb-desktop-nav">
@@ -42,35 +42,23 @@
                 <a href="about.html"><span>About Us</span></a>
               </li>
               <li class="bb-popover mx-3">
-                <a href="#container-featured-program"><span>Our Programs</span></a>
+                <a href="#container-featured-program"
+                  ><span>Our Programs</span></a
+                >
               </li>
               <li class="bb-popover mx-3">
                 <a href="#footer"><span>Contact Us</span></a>
               </li>
             </ul>
           </div>
+          <div class="bb-header-btn">
+            <div
+              id="google_translate_element"
+              onclick="renderDropdownTextLanguage()"
+            ></div>
+          </div>
         </div>
         <div class="d-flex align-items-center mx-2 my-2">
-          <div class="bb-header-btn">
-            <div id="google_translate_element"></div>
-          </div>
-          <div>
-            <div class="language-switch-toggle" onclick="toggleNavMenu()">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path
-                    data-name="Path 34314"
-                    d="M12 1.937a10 10 0 1010 10 10 10 0 00-10-10zm-.034 18c-.151 0-.3-.014-.447-.023a14.307 14.307 0 01-1.869-3.977h4.2a14.32 14.32 0 01-1.884 4zm-2.752-6a14.255 14.255 0 010-4h5.071a14.246 14.246 0 010 4zm-5.214-2a7.952 7.952 0 01.264-2h2.938a16.231 16.231 0 000 4H4.264a7.951 7.951 0 01-.264-2zm7.966-8a14.32 14.32 0 011.884 4h-4.2a14.308 14.308 0 011.869-3.975c.148-.009.296-.025.447-.025zm4.333 6h3.438a7.724 7.724 0 010 4H16.3a16.219 16.219 0 000-4zm2.619-2h-2.992a16.244 16.244 0 00-1.375-3.575 8.031 8.031 0 014.366 3.575zm-10.1-3.335a16.225 16.225 0 00-1.242 3.335H5.084a8.046 8.046 0 013.733-3.335zM5.082 15.937h2.492a16.224 16.224 0 001.242 3.336 8.046 8.046 0 01-3.734-3.336zm9.469 3.576a16.245 16.245 0 001.375-3.576h2.992a8.031 8.031 0 01-4.367 3.576z"
-                  ></path>
-                </svg>
-                <span>EN</span>
-              </div>
-            </div>
-          </div>
           <div class="bb-mobile-nav" onclick="toggleNavMenu()">
             <button
               type="button"
@@ -120,7 +108,7 @@
                       >
                         <div
                           class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
-                            onclick="toggleNavMenu()"
+                          onclick="toggleNavMenu()"
                         >
                           <span class="link-label">Home</span>
                         </div>
@@ -129,8 +117,8 @@
                     <li>
                       <a href="about.html">
                         <div
-                          class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"   
-                            onclick="toggleNavMenu()"         
+                          class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
+                          onclick="toggleNavMenu()"
                         >
                           <span class="link-label">About Us</span>
                         </div>
@@ -146,41 +134,21 @@
                         </div>
                       </a>
                     </li>
-            
+
+                    <li></li>
                     <li>
-                      <a href="#footer">
+                      <a>
                         <div
                           class="d-flex justify-content-between py-4 ps-4 bb-border-bottom"
-                          onclick="toggleNavMenu()"
                         >
-                          <span class="link-label">Contact Us</span>
+                          <span class="span-change-language">
+                            <div id="divChangeLanguage"></div
+                          ></span>
                         </div>
                       </a>
                     </li>
-            <li>
-              <div id="google_translate_element_mobie"></div>
-            </li>
                   </ul>
                 </nav>
-                <div class="p-4"></div>
-                <div class="p-4">
-                  <div class="language-switch d-flex align-items-center">
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-globe2"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -197,16 +165,21 @@
               <div class="col-sm-9 col-md-8 p-0 m-0">
                 <div class="text-box text-center">
                   <div>
-                    <h2 class="bb-section-title">OUI. ENGLISH ONLINE</h2>
+                    <h2 class="bb-section-title">OUI.VN</h2>
                     <!-- <h6 class="bb-section-subtitle">
                       Why do you learn at "FUN WITH AI"?
                     </h6> -->
                     <div>
-                      <p>30 minutes each day, Learn Anytime, Access Anywhere, Programs for All.</p>
+                      <p>
+                        30 minutes each day, Learn Anytime, Access Anywhere,
+                        Programs for All.
+                      </p>
                       <p>Google AI with Text-to-Speech and Speech-to-Text</p>
                       <p>Oxford University Press</p>
                       <p>Parents are instructor and track all scores with AI</p>
-                      We proudly accept students from all walks of life, regardless of age or background, interest-free payment plans.
+                      We proudly accept students from all walks of life,
+                      regardless of age or background, interest-free payment
+                      plans.
                       <!-- <p>
                         30 minutes each day, Learn Anytime, Access Anywhere, Programs for All.
                         Google AI with Text-to-Speech and Speech-to-Text
@@ -219,7 +192,6 @@
                       class="btn-container"
                       style="margin-top: 30px; --button-color: "
                     >
-                    
                       <a href="/login" data-anchor="123">
                         <button type="button" class="btn btn-light">
                           Login
@@ -377,82 +349,124 @@
     </main>
     <div id="footer">
       <footer>
-        <div class="form-footer container ">
-            <h3 class="title text-center">Contact Us</h3>
-            <div class="desctription text-center">
-                <p>For enrollment and other inquiries, please contact us using the form below. We will respond to your
-                    inquiry within 2-4 business days.</p>
-                <p>For all urgent matters, please call us directly at <strong>1900 1000</strong>.</p>
+        <div class="form-footer container">
+          <h3 class="title text-center">Contact Us</h3>
+          <div class="desctription text-center">
+            <p>
+              For enrollment and other inquiries, please contact us using the
+              form below. We will respond to your inquiry within 2-4 business
+              days.
+            </p>
+            <p>
+              For all urgent matters, please call us directly at
+              <strong>1900 1000</strong>.
+            </p>
+          </div>
+          <form class="form row" action="input.php" method="post">
+            <div class="input col-md-6 d-flex flex-column">
+              <label for="first-name">First Name*</label>
+              <input
+                class="form-control bb-border-color form-control bb-border-color"
+                type="text"
+              />
             </div>
-            <form class="form row" action="input.php" method="post">
-                <div class="input col-md-6 d-flex flex-column">
-                    <label for="first-name">First Name*</label>
-                    <input class="form-control bb-border-color form-control bb-border-color " type="text">
-                </div>
-                <div class="input col-md-6 d-flex flex-column">
-                    <label for="last-name">Last Name*</label>
-                    <input class="form-control bb-border-color form-control bb-border-color " type="text">
-                </div>
-                <div class="input col-md-6 d-flex flex-column">
-                    <label for="email">Email*</label>
-                    <input class="form-control bb-border-color form-control bb-border-color " type="email">
-                </div>
-                <div class="input col-md-6 d-flex flex-column">
-                    <label for="Phone">Phone</label>
-                    <input class="form-control bb-border-color form-control bb-border-color " type="number">
-                </div>
-                <div class="input col-md-12 d-flex flex-column">
-                    <label for="subject">Subject*</label>
-                    <input class="form-control bb-border-color form-control bb-border-color " type="text">
-                </div>
-                <div class="input col-md-12 d-flex flex-column">
-                    <label for="message">Message*</label>
-                    <textarea class="form-control bb-border-color form-control bb-border-color" name="message" id="message" cols="5" rows="5"></textarea>
-                  </div>
-                  <div class="btn-submit col-12 d-flex justify-content-end ">
-                    <input type="submit" class="btn btn-primary mx-0" value="Submit"></input>
-                  </div>
-            </form>
+            <div class="input col-md-6 d-flex flex-column">
+              <label for="last-name">Last Name*</label>
+              <input
+                class="form-control bb-border-color form-control bb-border-color"
+                type="text"
+              />
+            </div>
+            <div class="input col-md-6 d-flex flex-column">
+              <label for="Phone">Phone*</label>
+              <input
+                class="form-control bb-border-color form-control bb-border-color"
+                type="number"
+              />
+            </div>
+            <div class="input col-md-6 d-flex flex-column">
+              <label for="email">Email*</label>
+              <input
+                class="form-control bb-border-color form-control bb-border-color"
+                type="email"
+              />
+            </div>
+
+            <div class="input col-md-12 d-flex flex-column">
+              <label for="subject">Subject*</label>
+              <input
+                class="form-control bb-border-color form-control bb-border-color"
+                type="text"
+              />
+            </div>
+            <div class="input col-md-12 d-flex flex-column">
+              <label for="message">Message*</label>
+              <textarea
+                class="form-control bb-border-color form-control bb-border-color"
+                name="message"
+                id="message"
+                cols="5"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="btn-submit col-12 d-flex justify-content-end">
+              <!-- <input type="submit" class="btn btn-primary mx-0" value="Submit"></input> -->
+            </div>
+          </form>
         </div>
         <div class="footer-top">
-            <div class="footer-container container">
-                <div class="row w-100">
-                    <div class="col-md-6">
-                        <div class="bb-site-title">
-                            <p>OUI. ENGLISH ONLINE</p>
-                        </div>
-                    </div>
-                    <div class=" col-md-6">
-                        <div class="d-flex py-1">
-                            <span class="me-2 text-light">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg>
-                            </span>
-                            <a aria-label="Phone 1900 1000" href="tel:1900 1000">
-                                <p class="phone-numer-text">1900 1000</p>
-                            </a>
-                        </div>
-                        <div class="d-flex py-1">
-                            <span class="me-2 text-light">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                            </svg>
-                            </span>
-                            <a aria-label="info@oui.vn" href="emailto:info@oui.vn">
-                                <p class="email-text">info@oui.vn</p>
-                            </a>
-                        </div>
-                    </div> 
+          <div class="footer-container container">
+            <div class="row w-100">
+              <div class="col-md-6">
+                <div class="bb-site-title">
+                  <p>OUI.VN</p>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex py-1">
+                  <span class="me-2 text-light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telephone-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                      />
+                    </svg>
+                  </span>
+                  <a aria-label="Phone 1900 1000" href="tel:1900 1000">
+                    <p class="phone-numer-text">1900 1000</p>
+                  </a>
+                </div>
+                <div class="d-flex py-1">
+                  <span class="me-2 text-light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-envelope-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                      />
+                    </svg>
+                  </span>
+                  <a aria-label="info@oui.vn" href="emailto:info@oui.vn">
+                    <p class="email-text">info@oui.vn</p>
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
-
+      </footer>
     </div>
 
     <script type="text/javascript">
@@ -480,6 +494,95 @@
           "google_translate_element"
         );
       }
+
+      function changeTextAtHeader() {
+        var targetElement = document.getElementById("google_translate_element");
+        var onloadTextLanguage = "EN | VN";
+        targetElement.addEventListener("DOMNodeInserted", () => {
+          $(".VIpgJd-ZVi9od-xl07Ob-lTBxed span:first").each(function (i, obj) {
+            if (
+              obj.childNodes[0] &&
+              obj.childNodes[0].textContent == "Chọn Ngôn ngữ"
+            ) {
+              $(obj).html(onloadTextLanguage);
+            }
+          });
+        });
+        targetElement.addEventListener("DOMNodeInserted", () => {
+          $(".goog-te-menu-value span:first").each(function (i, obj) {
+            if (
+              obj.childNodes[0] &&
+              obj.childNodes[0].textContent == "Select Language"
+            ) {
+              $(obj).html(onloadTextLanguage);
+            }
+          });
+        });
+        targetElement.addEventListener("DOMNodeInserted", () => {
+          $(".VIpgJd-ZVi9od-xl07Ob-lTBxed span:first").each(function (i, obj) {
+            if (obj.childNodes[0]) {
+              $(obj).html(onloadTextLanguage);
+            }
+          });
+        });
+      }
+      // change text when at header (not dropdown)
+      changeTextAtHeader();
+      // change Text at dropdown
+      window.onload = loadRenderTextLanguage;
+      function renderDropdownTextLanguage() {
+        console.log("onclick");
+        loadRenderTextLanguage();
+      }
+      //<---------FUNCTION SHARED----------->//
+      //render text
+      function renderText(itemText) {
+        console.log("cc222", itemText);
+        for (var i = 0; i < itemText.length; i++) {
+          console.log("ccc3333", itemText[i].textContent);
+          if (itemText[i].textContent == "Anh") {
+            console.log("anh");
+            itemText[i].textContent = "English";
+          }
+          //  else if (itemText[i].textContent == "Việt" && itemText.length > 2) {
+          //   itemText[i].classList.add("hidden");
+          // }
+          else if (itemText[i].textContent == "Việt") {
+            itemText[i].textContent = "Tiếng Việt";
+          }
+        }
+      }
+
+      // change text language
+      function changeTextLanguageDropdown(doc) {
+        var targetElementItemLanguage =
+          doc.contentWindow.document.body.getElementsByClassName("text");
+        var Vietnamese = "Vietnamese";
+        console.log("cc", targetElementItemLanguage);
+        renderText(targetElementItemLanguage);
+      }
+
+      //renderText when onClick button or reload
+      function loadRenderTextLanguage() {
+        let myiFrame = document.getElementsByClassName(
+          "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
+        );
+
+        for (var i = 0; i < myiFrame.length; i++) {
+          console.log(myiFrame[i]);
+          let link = document.createElement("link");
+          link.href = "style.css";
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          //ADD CSS
+          myiFrame[i].contentWindow.document.head.appendChild(link);
+          console.log(myiFrame[i]);
+          // CHANGE TEXT SHOW
+          changeTextLanguageDropdown(myiFrame[i]);
+        }
+      }
+
+      //scroll change height header
       window.addEventListener("scroll", function () {
         const headerElement = document.getElementById("myHeader");
         let scrollPosition = document.documentElement.scrollTop;
@@ -491,7 +594,11 @@
           headerElement.classList.add("header-scrolled");
         }
       });
+      //show menu bar when onclick
       function toggleNavMenu() {
+        var elementToMove = document.getElementById("google_translate_element");
+        var divChangeLanguage = document.getElementById("divChangeLanguage");
+        divChangeLanguage.appendChild(elementToMove);
         var mobileNav = document.querySelector(".nav-menu");
         mobileNav.classList.toggle("show");
       }
