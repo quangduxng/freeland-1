@@ -532,6 +532,27 @@
       window.onload = loadRenderTextLanguage;
       function renderDropdownTextLanguage() {
         console.log("onclick");
+        var targetElementAddClass = document.getElementsByClassName(
+          "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
+        )[0];
+        var scrollY = window.scrollY || window.pageYOffset;
+        var screenWidth = window.innerWidth;
+
+        if (scrollY > 100 && screenWidth > 1100) {
+          targetElementAddClass.classList.add("scrolled-onClick-language");
+        } else if (scrollY < 100 && screenWidth > 1100) {
+          targetElementAddClass.classList.remove("scrolled-onClick-language");
+        }
+        if (scrollY > 100 && screenWidth < 1100) {
+          targetElementAddClass.classList.add(
+            "scrolled-onClick-language-mobile"
+          );
+        } else if (scrollY < 100 && screenWidth < 1100) {
+          targetElementAddClass.classList.remove(
+            "scrolled-onClick-language-mobile"
+          );
+        }
+
         loadRenderTextLanguage();
       }
       //<---------FUNCTION SHARED----------->//
@@ -602,6 +623,16 @@
         var mobileNav = document.querySelector(".nav-menu");
         mobileNav.classList.toggle("show");
       }
+
+      // dont scroll when onclick change language
+      function disableScroll(event) {
+        event.preventDefault();
+      }
+
+      var button = document.getElementById("google_translate_element");
+      button.addEventListener("click", disableScroll);
+
+      function addScrolledClass() {}
     </script>
 
     <script

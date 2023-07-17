@@ -83,6 +83,9 @@ header .bb-site-title p {
   width: max-content;
   /* display: flex; */
 }
+.span-change-language :after {
+  width: 0% !important;
+}
 .bb-desktop-nav li a.active span:after,
 .nav-panel li a.active span:after,
 .bb-desktop-nav li a:hover span:after,
@@ -433,6 +436,14 @@ footer {
   background-color: var(--color-main) !important;
   border: 1px solid #fff;
 }
+.goog-te-combo,
+.VIpgJd-ZVi9od-ORHb *,
+.VIpgJd-ZVi9od-SmfZ *,
+.VIpgJd-ZVi9od-xl07Ob *,
+.VIpgJd-ZVi9od-vH1Gmf *,
+.VIpgJd-ZVi9od-l9xktf * {
+  font-family: Archivo !important;
+}
 .VIpgJd-ZVi9od-vH1Gmf-ibnC6b div,
 .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:link div,
 .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:visited div,
@@ -458,6 +469,13 @@ footer {
 }
 .VIpgJd-ZVi9od-xl07Ob-OEVmcd {
   width: 88px !important;
+}
+
+.scrolled-onClick-language {
+  top: 40px !important;
+}
+.scrolled-onClick-language-mobile {
+  top: 340px !important;
 }
 /* ABOUT PAGE */
 #about {
