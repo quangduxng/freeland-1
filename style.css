@@ -359,7 +359,7 @@ footer {
   padding: 140px 0px;
 }
 .image-main-introduce {
-  background-image: url("https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=MDRdV0k%2BIEtXMDFGREZeIVsqWSNQMVAgIAo%3D&w=1280");
+  background-image: url("./image/bg-main.jpg");
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
