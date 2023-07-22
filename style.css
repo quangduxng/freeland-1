@@ -477,6 +477,39 @@ footer {
 .scrolled-onClick-language-mobile {
   top: 340px !important;
 }
+/* 1 */
+.img-course-1 div{
+  display: none;
+}.img-course-1:hover{
+  transform: translateY(-60px);
+  transition: all 0.5s;
+}
+.img-course-1:hover div{
+  display: block;
+  transition: 0.2s; 
+}
+/* 2 */
+.img-course-2 div{
+  display: none;
+}.img-course-2:hover{
+  transform: translateY(-60px);
+  transition: all 0.5s;
+}
+.img-course-2:hover div{
+  display: block;
+  transition: 0.2s; 
+}
+/* 3 */
+.img-course-3 div{
+  display: none;
+}.img-course-3:hover{
+  transform: translateY(-60px);
+  transition: all 0.5s;
+}
+.img-course-3:hover div{
+  display: block;
+  transition: 0.2s; 
+}
 /* ABOUT PAGE */
 #about {
   max-width: 100%;
