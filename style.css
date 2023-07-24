@@ -669,3 +669,7 @@ body {
 div#google_translate_element span {
   font-size: 16px;
 }
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: -45px;
+  top: 45%;
+}
