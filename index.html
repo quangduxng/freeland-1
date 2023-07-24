@@ -601,7 +601,7 @@
       changeTextAtHeader();
 
       // change Text at dropdown
-      // window.onload = loadRenderTextLanguage;
+      window.onload = loadRenderTextLanguage;
       // function renderDropdownTextLanguage() {
       //   console.log("onclick");
       //   var targetElementAddClass = document.getElementsByClassName(
@@ -625,7 +625,7 @@
       //     );
       //   }
 
-      //   loadRenderTextLanguage();
+      loadRenderTextLanguage();
       // }
       //<---------FUNCTION SHARED----------->//
       //render text
@@ -652,24 +652,24 @@
       // }
 
       //renderText when onClick button or reload
-      // function loadRenderTextLanguage() {
-      //   let myiFrame = document.getElementsByClassName(
-      //     "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
-      //   );
+      function loadRenderTextLanguage() {
+        let myiFrame = document.getElementsByClassName(
+          "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
+        );
 
-      //   for (var i = 0; i < myiFrame.length; i++) {
-      //     console.log(myiFrame[i]);
-      //     let link = document.createElement("link");
-      //     link.href = "style.css";
-      //     link.rel = "stylesheet";
-      //     link.type = "text/css";
-      //     //ADD CSS
-      //     myiFrame[i].contentWindow.document.head.appendChild(link);
-      //     console.log(myiFrame[i]);
-      //     // CHANGE TEXT SHOW
-      //     changeTextLanguageDropdown(myiFrame[i]);
-      //   }
-      // }
+        for (var i = 0; i < myiFrame.length; i++) {
+          console.log(myiFrame[i]);
+          let link = document.createElement("link");
+          link.href = "style.css";
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          //ADD CSS
+          myiFrame[i].contentWindow.document.head.appendChild(link);
+          console.log(myiFrame[i]);
+          // CHANGE TEXT SHOW
+          // changeTextLanguageDropdown(myiFrame[i]);
+        }
+      }
 
       //scroll change height header
       window.addEventListener("scroll", function () {
