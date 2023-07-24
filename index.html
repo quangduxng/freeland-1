@@ -10,9 +10,24 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
       $(function () {
@@ -57,7 +72,10 @@
           <div class="bb-header-btn">
             <div
               id="google_translate_element"
-              onclick="renderDropdownTextLanguage()"
+              onclick="
+              // renderDropdownTextLanguage(), 
+              
+              changeLanguageDoNotShowMore()"
             ></div>
           </div>
         </div>
@@ -283,14 +301,14 @@
             </div>
           </div>
           <div class="box-items row owl-carousel">
-            <div class="item  text-center mb-4 img-course-1">
-              <a href="#" >
+            <div class="item text-center mb-4 img-course-1">
+              <a href="#">
                 <img
-                src="image/course1.webp"
-                alt="item1"
-                width="300px"
-                height="300px"
-              />
+                  src="image/course1.webp"
+                  alt="item1"
+                  width="300px"
+                  height="300px"
+                />
               </a>
               <div class="name-feature">Course 1:</div>
               <div class="auth-and-time">
@@ -302,14 +320,14 @@
                 <p>Reference: Everybody UP 6</p>
               </div>
             </div>
-            <div class="item  text-center mb-4 img-course-2">
+            <div class="item text-center mb-4 img-course-2">
               <a href="#">
                 <img
-                src="image/course2.webp"
-                alt="item1"
-                width="300px"
-                height="300px"
-              />
+                  src="image/course2.webp"
+                  alt="item1"
+                  width="300px"
+                  height="300px"
+                />
               </a>
               <div class="name-feature">Course 2:</div>
               <div class="auth-and-time">
@@ -321,14 +339,14 @@
                 <p>Reference: Everybody UP 15</p>
               </div>
             </div>
-            <div class="item  text-center mb-4 img-course-3">
+            <div class="item text-center mb-4 img-course-3">
               <a href="#">
                 <img
-                src="image/course3.webp"
-                alt="item1"
-                width="300px"
-                height="300px"
-              />
+                  src="image/course3.webp"
+                  alt="item1"
+                  width="300px"
+                  height="300px"
+                />
               </a>
               <div class="name-feature">Course 3:</div>
               <div class="auth-and-time">
@@ -472,7 +490,12 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
@@ -480,32 +503,32 @@
           "google_translate_element"
         );
       }
-      $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:50,
-          nav: false,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          dots: true,
-          items:1,
-          navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-      ],
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 50,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: true,
+        items: 1,
+        navText: [
+          '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+          '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+        ],
 
-          responsive:{
-              0:{
-            items:1
-              },
-              600:{
-                  items:2
-              },
-              1000:{
-                  items:3
-              }
-    }
-})
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
     </script>
 
     <script
@@ -526,8 +549,8 @@
       }
 
       function changeTextAtHeader() {
-        var targetElement = document.getElementById("google_translate_element");
-        var onloadTextLanguage = "EN | VN";
+        let targetElement = document.getElementById("google_translate_element");
+        let onloadTextLanguage = "EN | VN";
         targetElement.addEventListener("DOMNodeInserted", () => {
           $(".VIpgJd-ZVi9od-xl07Ob-lTBxed span:first").each(function (i, obj) {
             if (
@@ -556,82 +579,97 @@
           });
         });
       }
+      function onclickOneElement() {}
+
+      function changeLanguageDoNotShowMore() {
+        let targetElement = document.getElementById("google_translate_element");
+        let onloadTextLanguage = "EN | VN";
+        $(".VIpgJd-ZVi9od-xl07Ob-lTBxed span:first").each(function (i, obj) {
+          $(obj).html(onloadTextLanguage);
+          //onclick  another element ANH OR VIET
+          let myiFrame = document.getElementsByClassName(
+            "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
+          );
+          let a =
+            myiFrame[0].contentWindow.document.body.getElementsByClassName(
+              "VIpgJd-ZVi9od-vH1Gmf-ibnC6b"
+            )[0];
+          a.click();
+        });
+      }
       // change text when at header (not dropdown)
       changeTextAtHeader();
+
       // change Text at dropdown
-      window.onload = loadRenderTextLanguage;
-      function renderDropdownTextLanguage() {
-        console.log("onclick");
-        var targetElementAddClass = document.getElementsByClassName(
-          "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
-        )[0];
-        var scrollY = window.scrollY || window.pageYOffset;
-        var screenWidth = window.innerWidth;
+      // window.onload = loadRenderTextLanguage;
+      // function renderDropdownTextLanguage() {
+      //   console.log("onclick");
+      //   var targetElementAddClass = document.getElementsByClassName(
+      //     "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
+      //   )[0];
+      //   var scrollY = window.scrollY || window.pageYOffset;
+      //   var screenWidth = window.innerWidth;
 
-        if (scrollY > 100 && screenWidth > 1100) {
-          targetElementAddClass.classList.add("scrolled-onClick-language");
-        } else if (scrollY < 100 && screenWidth > 1100) {
-          targetElementAddClass.classList.remove("scrolled-onClick-language");
-        }
-        if (scrollY > 100 && screenWidth < 1100) {
-          targetElementAddClass.classList.add(
-            "scrolled-onClick-language-mobile"
-          );
-        } else if (scrollY < 100 && screenWidth < 1100) {
-          targetElementAddClass.classList.remove(
-            "scrolled-onClick-language-mobile"
-          );
-        }
+      //   if (scrollY > 100 && screenWidth > 1100) {
+      //     targetElementAddClass.classList.add("scrolled-onClick-language");
+      //   } else if (scrollY < 100 && screenWidth > 1100) {
+      //     targetElementAddClass.classList.remove("scrolled-onClick-language");
+      //   }
+      //   if (scrollY > 100 && screenWidth < 1100) {
+      //     targetElementAddClass.classList.add(
+      //       "scrolled-onClick-language-mobile"
+      //     );
+      //   } else if (scrollY < 100 && screenWidth < 1100) {
+      //     targetElementAddClass.classList.remove(
+      //       "scrolled-onClick-language-mobile"
+      //     );
+      //   }
 
-        loadRenderTextLanguage();
-      }
+      //   loadRenderTextLanguage();
+      // }
       //<---------FUNCTION SHARED----------->//
       //render text
-      function renderText(itemText) {
-        console.log("cc222", itemText);
-        for (var i = 0; i < itemText.length; i++) {
-          console.log("ccc3333", itemText[i].textContent);
-          if (itemText[i].textContent == "Anh") {
-            console.log("anh");
-            itemText[i].textContent = "English";
-          }
-          //  else if (itemText[i].textContent == "Việt" && itemText.length > 2) {
-          //   itemText[i].classList.add("hidden");
-          // }
-          else if (itemText[i].textContent == "Việt") {
-            itemText[i].textContent = "Tiếng Việt";
-          }
-        }
-      }
+      // function renderText(itemText) {
+      //   for (var i = 0; i < itemText.length; i++) {
+      //     if (itemText[i].textContent == "Anh") {
+      //       console.log("anh");
+      //       itemText[i].textContent = "English";
+      //     }
+      //     //  else if (itemText[i].textContent == "Việt" && itemText.length > 2) {
+      //     //   itemText[i].classList.add("hidden");
+      //     // }
+      //     else if (itemText[i].textContent == "Việt") {
+      //       itemText[i].textContent = "Tiếng Việt";
+      //     }
+      //   }
+      // }
 
       // change text language
-      function changeTextLanguageDropdown(doc) {
-        var targetElementItemLanguage =
-          doc.contentWindow.document.body.getElementsByClassName("text");
-        var Vietnamese = "Vietnamese";
-        console.log("cc", targetElementItemLanguage);
-        renderText(targetElementItemLanguage);
-      }
+      // function changeTextLanguageDropdown(doc) {
+      //   let targetElementItemLanguage =
+      //     doc.contentWindow.document.body.getElementsByClassName("text");
+      //   renderText(targetElementItemLanguage);
+      // }
 
       //renderText when onClick button or reload
-      function loadRenderTextLanguage() {
-        let myiFrame = document.getElementsByClassName(
-          "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
-        );
+      // function loadRenderTextLanguage() {
+      //   let myiFrame = document.getElementsByClassName(
+      //     "VIpgJd-ZVi9od-xl07Ob-OEVmcd"
+      //   );
 
-        for (var i = 0; i < myiFrame.length; i++) {
-          console.log(myiFrame[i]);
-          let link = document.createElement("link");
-          link.href = "style.css";
-          link.rel = "stylesheet";
-          link.type = "text/css";
-          //ADD CSS
-          myiFrame[i].contentWindow.document.head.appendChild(link);
-          console.log(myiFrame[i]);
-          // CHANGE TEXT SHOW
-          changeTextLanguageDropdown(myiFrame[i]);
-        }
-      }
+      //   for (var i = 0; i < myiFrame.length; i++) {
+      //     console.log(myiFrame[i]);
+      //     let link = document.createElement("link");
+      //     link.href = "style.css";
+      //     link.rel = "stylesheet";
+      //     link.type = "text/css";
+      //     //ADD CSS
+      //     myiFrame[i].contentWindow.document.head.appendChild(link);
+      //     console.log(myiFrame[i]);
+      //     // CHANGE TEXT SHOW
+      //     changeTextLanguageDropdown(myiFrame[i]);
+      //   }
+      // }
 
       //scroll change height header
       window.addEventListener("scroll", function () {
