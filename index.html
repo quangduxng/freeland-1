@@ -625,7 +625,7 @@
       //     );
       //   }
 
-      loadRenderTextLanguage();
+      //   loadRenderTextLanguage();
       // }
       //<---------FUNCTION SHARED----------->//
       //render text
@@ -675,14 +675,26 @@
       window.addEventListener("scroll", function () {
         const headerElement = document.getElementById("myHeader");
         let scrollPosition = document.documentElement.scrollTop;
-
+        let scrollY = window.scrollY || window.pageYOffset;
         if (scrollPosition < 40) {
           console.log(scrollPosition);
           headerElement.classList.remove("header-scrolled");
-        } else if (scrollPosition > 100) {
+        } else if (scrollPosition > 100 || scrollY > 100) {
           headerElement.classList.add("header-scrolled");
         }
       });
+      window.onload = function () {
+        const headerElement = document.getElementById("myHeader");
+
+        let scrollY = window.scrollY || window.pageYOffset;
+        if (scrollY < 40) {
+          console.log(scrollY);
+          headerElement.classList.remove("header-scrolled");
+        } else if (scrollY > 100) {
+          headerElement.classList.add("header-scrolled");
+        }
+      };
+
       //show menu bar when onclick
       function toggleNavMenu() {
         var elementToMove = document.getElementById("google_translate_element");
